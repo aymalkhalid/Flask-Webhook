@@ -1,0 +1,23 @@
+# Application name and Database Tabel Name(class)
+from main import Appointments
+from main import db
+-----------------
+#Creating ALl the tables Code
+-----------------
+db.create_all()
+
+=========================================
+#Sample Data
+appointment=Appointments(name="Aymal",contact="03361901499", clinic="Dermatologist", doctor="Dr Shafiq",date="null",time="null")
+db.session.add(appointment)
+db.session.commit()
+
+
+=========================================
+
+#Query all Command
+appointment.query.all()
+
+# Representaion of The Database
+    def __repr__(self):
+        return f"{self.name} -- {self.contact}--{self.clinic}--{self.doctor}--{self.date}--{self.time}"

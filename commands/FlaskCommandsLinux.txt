@@ -1,0 +1,4 @@
+# SQL MODE ON 
+sqlite3 flask_qa/db.sqlite3
+
+
