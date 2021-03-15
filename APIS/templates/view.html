@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>List</title>
+</head>
+
+<body>
+
+    <h3>Appointments Information</h3>
+    <table border=1>
+        <thead>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Contact</td>
+            <td>Clinic</td>
+            <td>Doctor</td>
+            <td>Date</td>
+            <td>Time</td>
+        </thead>
+
+        {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["name"]}}</td>
+            <td>{{row["contact"]}}</td>
+            <td>{{row["clinic"]}}</td>
+            <td>{{row["doctor"]}}</td>
+            <td>{{row["date"]}}</td>
+            <td>{{row["time"]}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+    <br><br>
+
+    <a href="/">Go back to home page</a>
+
+</body>
+
+</html>
