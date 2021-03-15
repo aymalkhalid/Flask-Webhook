@@ -1,2 +1,0 @@
-SQLLITE3 etc
-Clinic Appointmnet
