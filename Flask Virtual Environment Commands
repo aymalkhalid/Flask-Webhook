@@ -1,0 +1,15 @@
+#Create Flask Environment
+pipenv install flask
+#Start Flask Project Environment
+pipenv shell
+----------------
+USE
+pipenv install
+---------------------------
+#SQL Library Flask
+flask-sqlalchemy
+-------
+#Flask Login
+flask-login
+-------
+python-dotenv
